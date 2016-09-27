@@ -3,41 +3,46 @@ layout: default
 ---
 <div class="site-container">
     <div class="content-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 social-links">
-                <a href="https://twitter.com/ydotsamuel">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="https://www.instagram.com/ydotsamuel/">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="col-xs-12">
-                <div class="brand-container">
-                    <img class="brand" src="/img/ydot.png" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="brand-container">
+                        <img class="brand" src="/img/ydot.png" />
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-6 song-container">
-                {% include track.html track="282507629" color="9dddf9" id="shinji" %}
-            </div>
-            <div class="col-xs-6 song-container">
-                {% include track.html track="283570713" color="ffc490" id="tomhanks" %}
+                <div class="col-xs-12">
+                    <div class="social-links">
+                        <a tabindex="-1" id="social-twitter" target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span>
+                        </a>
+                        <a tabindex="-1" id="social-instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-instagram fa-stack-1x"></i>
+                            </span>
+                        </a>
+                        <a tabindex="-1" id="social-snapchat" href="#" data-toggle="modal" data-target="#snapcode">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-snapchat-ghost fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 song-container">
+                    {% include track.html track="282507629" color="9dddf9" id="shinji" %}
+                </div>
+                <div class="col-xs-6 song-container">
+                    {% include track.html track="283570713" color="ffc490" id="tomhanks" %}
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="snapcode" tabindex="-1" role="dialog">
+        <img class="snapcode" src="img/snapcode.svg" />
     </div>
 </div>
 

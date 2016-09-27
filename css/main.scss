@@ -5,16 +5,14 @@
 $tomhanks-bg: #ffc490;
 $shinji-bg:   #9dddf9;
 
+$body-bg: linear-gradient(to right, $shinji-bg 0%, $shinji-bg 50%, $tomhanks-bg 50%, $tomhanks-bg 100%);
+
 @import "bootstrap";
 
 body {
   color: #fff;
   height: 100vh;
-  background: linear-gradient(to right, $shinji-bg 0%, $shinji-bg 50%, $tomhanks-bg 50%, $tomhanks-bg 100%);
-}
-
-.fa-inverse {
-  color: $shinji-bg;
+  background: $body-bg;
 }
 
 .brand-container {
@@ -41,29 +39,42 @@ body {
 }
 
 .social-links {
-  display: none;
-  padding-top: 1rem;
-  text-align: right;
+  color: black;
+  text-align: center;
 
-  a:link .fa-circle {
-    color: white;
+  a:link {
+    color: black;
+    text-decoration: none;
   }
 
-  a:visited .fa-circle {
-    color: white;
+  a:visited {
+    color: black;
+    text-decoration: none;
   }
 
-  a:hover .fa-circle {
-    color: white;
+  a:hover {
+    color: black;
+    text-decoration: none;
   }
 
-  a:active fa-circle {
-    color: white;
+  a:active {
+    color: black;
+    text-decoration: none;
   }
 }
 
+.snapcode {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 75%;
+  max-width: 320px;
+}
+
 .site-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
 }
