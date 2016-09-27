@@ -9,6 +9,8 @@ $shinji-bg:   #9dddf9;
 
 body {
   color: #fff;
+  height: 100vh;
+  background: linear-gradient(to right, $shinji-bg 0%, $shinji-bg 50%, $tomhanks-bg 50%, $tomhanks-bg 100%);
 }
 
 .fa-inverse {
@@ -22,6 +24,7 @@ body {
 .brand {
   display: block;
   margin: -2rem auto 1rem auto;
+  transform: translateX(-50px);
 }
 
 .song-container {
@@ -29,6 +32,7 @@ body {
 }
 
 .social-links {
+  display: none;
   padding-top: 1rem;
   text-align: right;
 
@@ -49,5 +53,15 @@ body {
   }
 }
 
-.social-link {
+.site-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.content-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
