@@ -31,8 +31,23 @@ body {
 .social-links {
   padding-top: 1rem;
   text-align: right;
+
+  a:link .fa-circle {
+    color: white;
+  }
+
+  a:visited .fa-circle {
+    color: white;
+  }
+
+  a:hover .fa-circle {
+    color: white;
+  }
+
+  a:active fa-circle {
+    color: white;
+  }
 }
 
 .social-link {
-  color: $shinji-bg;
 }
