@@ -11,32 +11,7 @@ layout: default
                     </div>
                 </div>
                 <div class="col-xs-12">
-                    <div class="social-links">
-                        <a tabindex="-1" id="social-twitter" target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x"></i>
-                            </span>
-                        </a>
-                        <a tabindex="-1" id="social-instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-instagram fa-stack-1x"></i>
-                            </span>
-                        </a>
-                        <a tabindex="-1" id="social-snapchat" href="#" data-toggle="modal" data-target="#snapcode">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-snapchat-ghost fa-stack-1x"></i>
-                            </span>
-                        </a>
-                        <a tabindex="-1" id="social-soundcloud" target="_blank" href="https://www.soundcloud.com/{{ site.soundcloud_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-soundcloud fa-stack-1x"></i>
-                            </span>
-                        </a>
-                    </div>
+                    {% include social-links.html %}
                 </div>
                 <div class="col-xs-6 song-container">
                     {% include track.html track="282507629" color="9dddf9" id="shinji" %}
